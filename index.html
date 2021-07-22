@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de nafta</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="calculator" >
+        <form class="formo" onsubmit="getValueInput();return false">
+        <label for="km">Cuantos kilometros vas a recorrer? </label>
+        <input required type="number" min="0" id="km">
+        <label for="km">Cuanto rinde su auto? </label>
+        <input required type="number" min="0" id="cons">
+        <label>Que combustible va a usar?</label>
+        <select required id="nafta"> 
+            <option ></option>
+            <option value="65.81 ">Súper 95</option>
+            <option value="67.74">Premium 97</option>
+            <option value="67.87">Gasoil 10-S</option>
+            <option value="45.7">Gasoil 50-S</option>
+        </select>
+        <button type="submit" class="boton">
+            Calcular
+        </button>
+        <p id="valueInput"></p>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
