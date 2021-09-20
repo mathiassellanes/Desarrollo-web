@@ -1,23 +1,4 @@
-body{
-    height: 100%;
-    width: 100%;
-}
-.box {
-}
-
-/* .header {
-    background-color: #cfe2ff;
-    border-color: #b6d4fe;
-    display: flex;
-    height: 50px;
-    width: 100%;
-} */
-
 .alert {
-    /* align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; */
     width: 70%;
 }
 
@@ -25,4 +6,8 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+.header_text {
+    cursor: pointer;
 }

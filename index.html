@@ -13,30 +13,28 @@
 
 <body>
     <div class="box">
-        <div class="header alert-primary row justify-content-md-center" >
-            <ul class="nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
+        <div class="header alert-primary row justify-content-md-center">
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid ">
+                  <a onclick={initial()} class="header_text navbar-brand">Are you boring?</a>
+                    <form class="d-flex">
+                        <span class="navbar-brand">Search by key:</span>
+                        <input class="form-control me-2" id="key_search" type="search" placeholder="1000000, 9999999" aria-label="Search">
+                        <button class="btn btn-outline-light" onclick={searchKey()} type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
         </div>
         <div id="content">
-            <div id="alert_1" class="alert alert-primary">
+            <div id="alert_1" class="alert alert-secondary">
                 <span class="row justify-content-md-center">Are you boring?</span>
                 <div class="row justify-content-md-center">
-                    <button class="btn btn-primary col-2" onclick={funcYes()}>Yes</button>
-                    <button class="btn btn-danger col-2" onclick={funcNo()}>No</button>
+                    <button class="btn btn-outline-dark col-2" onclick={funcYes()}>Yes</button>
+                    <button class="btn btn-outline-dark col-2" onclick={funcNo()}>No</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
 <script src="script.js"></script>
-
 </html>
